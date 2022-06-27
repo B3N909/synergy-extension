@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remote Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./node_modules/puppeteer-web/lib/index.js"></script>
+    <script defer src="./browserxjs.js" type="module"></script>
+  </head>
+  
+  <style>
+      body {
+          display: flex;
+          background: #181818;
+      }
+
+      img {
+          margin: auto;
+          height: fit-content;
+          border: 5px solid #080808;
+          border-radius: 10px;
+      }
+  </style>
+
+  <body>
+      <img id="img">
+      <script defer src="./page.js"></script>
+  </body>
+</html>

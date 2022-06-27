@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Synergy Tool",
+    "description": "Synergy Tool v1.0",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
